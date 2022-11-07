@@ -27,7 +27,7 @@ class UserSeeder extends Seeder
             'status' => $faker->word(),
             'no_phone' => $faker->e164PhoneNumber,
             'aliran' => $faker->word(),
-            'gambar' => $faker->image(base_path('public/assets/images/user/'))
+            // 'gambar' => $faker->image(base_path('public/assets/images/user/'))
         ])->address()->create([
             'no_alamat' => $faker->randomNumber(5),
             'alamat' => $faker->cityPrefix,
@@ -49,7 +49,7 @@ class UserSeeder extends Seeder
             'status' => $faker->word(),
             'no_phone' => $faker->e164PhoneNumber,
             'aliran' => $faker->word(),
-            'gambar' => $faker->image(base_path('public/assets/images/user/'), 500, 500, 'cats')
+            // 'gambar' => $faker->image(base_path('public/assets/images/user/'), 500, 500, 'cats')
         ])->address()->create([
             'no_alamat' => $faker->randomNumber(5, true),
             'alamat' => $faker->cityPrefix,
@@ -73,7 +73,7 @@ class UserSeeder extends Seeder
                 'status' => $faker->word(),
                 'no_phone' => $faker->e164PhoneNumber,
                 'aliran' => $faker->word(),
-                'gambar' => $faker->image(base_path('public/assets/images/user/'), 500, 500, 'cats', true)
+                // 'gambar' => $faker->image(base_path('public/assets/images/user/'), 500, 500, 'cats', true)
             ])->address()->create([
                 'no_alamat' => $faker->randomNumber(5),
                 'alamat' => $faker->cityPrefix,
